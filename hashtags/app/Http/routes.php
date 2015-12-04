@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('master');
 });
+
+Route::get('/tweets/list', 'tweetController@index');
+
+Route::post('/tweets/save', 'tweetController@store');

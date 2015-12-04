@@ -98,11 +98,11 @@
             <div class="col-xs-12" id="results">
                 <div class="row" ng-repeat="t in tweets | filter: resultsearch">
                     <div class="col-xs-2 col-sm-1">
-                        <img ng-src="@{{t.user.profile_image_url}}" class="img-circle">
+                        <img ng-src="@{{t.profile_image_url}}" class="img-circle">
                     </div>
                     <div class="col-xs-10 col-sm-11">
-                        <small>@{{t.user.name}}</small>
-                        <br> <span ng-bind-html="t.text"></span>
+                        <small>@{{t.name}}</small>
+                        <br> <span ng-bind-html="t.tweet"></span>
                     </div>
 
                 </div>
